@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dashboard</class>
+ <widget class="QWidget" name="Dashboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <family>Segoe UI Black</family>
+       <pointsize>11</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Welcome to BuildWise</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="projectsButton">
+     <property name="text">
+      <string>Projects</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="tasksButton">
+     <property name="text">
+      <string>Tasks</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="notificationsButton">
+     <property name="text">
+      <string>Notification</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="userManagementButton">
+     <property name="text">
+      <string>User Management</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
