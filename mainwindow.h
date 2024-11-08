@@ -1,32 +1,27 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include "dialog.h"
 #include <QMainWindow>
-#include <QList>
-#include "user.h"
-#include "createuser.h"
-#include "dashboard.h"
-
+#include"cusview.h"
+QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
 }
+QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
+    MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
-    void on_createUserButton_clicked();
-    void addUserToList(User* newUser);
-    void on_loginButton_clicked();
+    void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
-    QList<User*> userList; // List to store users
+    Dialog *secwin;
 };
-
 #endif // MAINWINDOW_H
